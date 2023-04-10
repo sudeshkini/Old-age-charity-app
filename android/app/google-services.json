@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458974962609",
+    "project_id": "summer-home-f1a64",
+    "storage_bucket": "summer-home-f1a64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458974962609:android:235fab221940c758999390",
+        "android_client_info": {
+          "package_name": "com.summerhome.summer_home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458974962609-th6n9s0vdljt54bj0hja1dc6mo34um7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.summerhome.summer_home",
+            "certificate_hash": "2b650fc9f981f6311a93a6093a040002916117c1"
+          }
+        },
+        {
+          "client_id": "458974962609-kqckqp0s6fp6h04fggspsoffd6i92k63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfQvKh4xE9iw-7ai3dbfHaMl7pdXQ3ZHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458974962609-kqckqp0s6fp6h04fggspsoffd6i92k63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
