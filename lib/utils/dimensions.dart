@@ -7,12 +7,12 @@ import '../screens/donate_screen.dart';
 
 const webScreenSize = 600;
 
-/*List<Widget> homeScreenItems = [
-  const FeedScreen(),
-  const SearchScreen(),
+List<Widget> homeScreenItems = [
+  MapScreen(),
+  /*const SearchScreen(),
   const AddPostScreen(),
   const Text('notifications'),
   ProfileScreen(
     uid: FirebaseAuth.instance.currentUser!.uid,
-  ),
-];*/
+  ),*/
+];

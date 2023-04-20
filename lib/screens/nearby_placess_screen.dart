@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:summer_home/models/nearby_response.dart';
+import 'package:summer_home/models/nearby_responses.dart';
 
 import 'package:http/http.dart' as http;
 
