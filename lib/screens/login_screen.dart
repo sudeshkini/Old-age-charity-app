@@ -11,6 +11,7 @@ import '../utils/utils.dart';
 
 
 class LoginScreen extends StatefulWidget {
+  static const routname = "/loginscreen";
   const LoginScreen({Key? key}) : super(key: key);
 
   @override

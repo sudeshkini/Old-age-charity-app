@@ -5,6 +5,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 
 class MapScreen extends StatefulWidget {
+  static const routname = "/mapscreen";
   @override
   State<MapScreen> createState() => MapScreenState();
 }
@@ -87,7 +88,7 @@ class MapScreenState extends State<MapScreen> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingActionButton.extended(
           onPressed: _nearest_oldage_home,
-          label: Text('nearesyt oldage home'),
+          label: Text('nearest oldage home'),
           icon: Icon(Icons.directions_boat),
         ),
       ),

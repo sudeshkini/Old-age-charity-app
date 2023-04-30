@@ -37,7 +37,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
     pageController.jumpToPage(page);
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(

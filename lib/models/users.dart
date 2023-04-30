@@ -7,6 +7,9 @@ class User{
   final String uid;
   final String username;
   final String photoUrl;
+  final String? idToken;
+  //final String token;
+
 
 
   const User({
@@ -14,16 +17,21 @@ class User{
     required this.email,
     required this.uid,
     required this.photoUrl,
+    this.idToken,
+    //required this.token,
 
   });
-  static User fromSnap(DocumentSnapshot snap) {
-    var snapshot = snap.data() as Map<String, dynamic>;
+  static User fromSnap(DocumentSnapshot? snap, String? idToken) {
+    var snapshot = snap?.data() as Map<String, dynamic>?;
 
     return User(
-      uid: snapshot["uid"],
-      email: snapshot["email"],
-      username: snapshot["username"],
-      photoUrl: snapshot["photoUrl"],
+      uid: snapshot?["uid"] ?? "",
+      email: snapshot?["email"] ?? "",
+      username: snapshot?["username"] ?? "",
+      photoUrl: snapshot?["photoUrl"] ?? "",
+      idToken: idToken,
+      //token: snapshot?["token"]?? "",
+
 
     );
   }
@@ -33,6 +41,7 @@ class User{
     'email': email,
     'username': username,
     'photoUrl': photoUrl,
+    //'token': token,
   };
-
+  String? get getIdToken => idToken;
 }
