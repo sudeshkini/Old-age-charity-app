@@ -6,6 +6,7 @@ import '../screens/hire_grandma_screen.dart';
 import '../screens/map_screen.dart';
 import '../screens/sell_screen.dart';
 import '../screens/donate_screen.dart';
+import '../screens/volunteer_screen.dart';
 
 const webScreenSize = 600;
 
@@ -13,6 +14,7 @@ List<Widget> homeScreenItems = [
   MapScreen(),
   //AddDonater(),
   DonateScreen(""),
+  VolunteerScreen(""),
   //DonateDetailScreen(),
   /*const AddPostScreen(),
   const Text('notifications'),

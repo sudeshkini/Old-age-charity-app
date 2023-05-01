@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:summer_home/provider/donator.dart';
 
+import '../screens/donar_details_screen.dart';
+
 class DonateTile extends StatelessWidget {
   final String did;
   DonateTile(this.did);
@@ -95,22 +97,22 @@ class DonateTile extends StatelessWidget {
                           style: TextStyle(fontSize: 13),
                         ),
                       ),
-                      TextButton(
+                     /* TextButton(
                           onPressed: () {
-                            /*Navigator.of(context).push(
+                            Navigator.of(context).push(
                                 MaterialPageRoute(
                                 builder: (context) =>  DonateDetailScreen(),
                                 ),
-                            );*/
-                            Navigator.of(context).pushNamed(
+                            );
+                            /*Navigator.of(context).pushNamed(
                                 "/donatedetailscreen",
-                                arguments: did!);
+                                arguments: did!);*/
                           },
                           child: Text(
                             "Details",
                             style:
                             TextStyle(fontSize: 15, color: Colors.blue),
-                          ))
+                          ))*/
                     ],
                   )
                 ],

@@ -1,6 +1,9 @@
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
+import 'package:summer_home/resources/auth_methods.dart';
 
 class AppDrawer extends StatelessWidget {
+  final AuthMethods _authMethods = AuthMethods();
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -14,7 +17,7 @@ class AppDrawer extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
-                    "Welcome To Oldus",
+                    "Welcome To Age Well",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white70,
@@ -24,29 +27,12 @@ class AppDrawer extends StatelessWidget {
                 ),
               )),
           ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
+              leading: Icon(Icons.exit_to_app),
+              title: Text('Signout'),
               onTap: () {
-                Navigator.of(context).pushReplacementNamed('/mainscreen');
+                _authMethods.signOut();
               }),
           Divider(),
-          // ListTile(
-          //     leading: Icon(Icons.exit_to_app),
-          //     title: Text('LogOut'),
-          //     onTap: () {
-          //       Provider.of<Auth>(context, listen: false).logOut();
-          //       Navigator.of(context).pop();
-          //     }),
-          // Divider(),
-          // ListTile(
-          //   title: FlatButton.icon(
-          //       onPressed: () {
-          //         Navigator.of(context).pop();
-          //         Provider.of<Auth>(context, listen: false).logOut();
-          //       },
-          //       icon: Icon(Icons.exit_to_app),
-          //       label: Text("LogOut")),
-          // ),
         ],
       ),
     );

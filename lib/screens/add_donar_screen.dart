@@ -40,7 +40,7 @@ class _AddDonaterState extends State<AddDonater> {
       daddress: "",
       imageurl: "",
       msg: "",
-      nid: Random().nextInt(100000).toString(),
+      nid: "",
       phno: "");
 
   void _pickedImage(File image) async {

@@ -242,6 +242,8 @@ class Donator with ChangeNotifier {
     notifyListeners();
   }
 }*/
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:summer_home/models/donate.dart';
 import 'dart:convert';
@@ -309,7 +311,7 @@ class Donator with ChangeNotifier {
           "name": dd.dname,
           "daddress": dd.daddress,
           "number": dd.phno,
-          "nid": dd.nid,
+          "nid": Random().nextInt(100000).toString(),
           "message": dd.msg,
           "imageurl": dd.imageurl,
           "ditem": dd.ditem,

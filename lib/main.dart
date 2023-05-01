@@ -117,6 +117,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:summer_home/provider/donator.dart';
 import 'package:summer_home/provider/user_provider.dart';
+import 'package:summer_home/provider/volunteers.dart';
 import 'package:summer_home/responsive/mobile_screen_layout.dart';
 import 'package:summer_home/responsive/responsive_layout_screen.dart';
 import 'package:summer_home/responsive/web_screen_layout.dart';
@@ -144,6 +145,13 @@ class MyApp extends StatelessWidget {
             previousDonator?.dlist ?? [],
             userProvider.getUser?.email??'',
           ),
+        ),
+        ChangeNotifierProxyProvider<UserProvider, Volunteers>(
+          create: (_) => Volunteers("", [], ""),
+          update: (ctx, userProvider, prevprods) {
+            return Volunteers(userProvider.getUser?.getIdToken ?? "",
+                prevprods == null ? [] : prevprods.vitems, userProvider.getUser?.email??'');
+          },
         ),
       ],
       child: MaterialApp(
