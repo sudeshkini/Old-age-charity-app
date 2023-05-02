@@ -42,7 +42,11 @@ class _DonateScreenState extends State<DonateScreen> {
     final jlist = Provider.of<Donator>(context, listen: false).dlist;
     print('jlist length: ${jlist.length}');
     final jdata = jlist.where((i) => i.nid == nid).toList();
-    return Scaffold(
+    return Theme(
+        data: ThemeData(
+          primaryColor: Colors.blue, // set the primary color to blue
+        ),
+    child: Scaffold(
       appBar: AppBar(
           backgroundColor: Color.fromRGBO(54, 169, 186, 1.0),
           title: Text("Donate Now"),
@@ -70,6 +74,7 @@ class _DonateScreenState extends State<DonateScreen> {
                 jdata[i].did ?? '',
               ),
             ),
+    )
     );
   }
 }

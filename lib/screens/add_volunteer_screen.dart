@@ -72,7 +72,11 @@ class _AddVolunteerScreenState extends State<AddVolunteerScreen> {
   @override
   Widget build(BuildContext context) {
     final ngoid = ModalRoute.of(context)!.settings.arguments as String?;
-    return Scaffold(
+    return Theme(
+      data: ThemeData(
+        primaryColor: Colors.blue, // set the primary color to blue
+      ),
+    child: Scaffold(
       appBar: AppBar(
         title: Text(
           "Add Volunteer Work",
@@ -223,6 +227,7 @@ class _AddVolunteerScreenState extends State<AddVolunteerScreen> {
               ],
             )),
       ),
+    )
     );
   }
 }

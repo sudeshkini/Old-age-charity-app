@@ -19,13 +19,22 @@ class DonateDetailScreen extends StatelessWidget {
       // Handle the Bad state: No element error
       print(e.toString());
       print(did);
-      return Scaffold(
+      return Theme(
+          data: ThemeData(
+            primaryColor: Colors.blue, // set the primary color to blue
+          ),
+      child: Scaffold(
         body: Center(
           child: Text('No matching data found.'),
         ),
+      )
       );
     }
-    return Scaffold(
+    return Theme(
+    data: ThemeData(
+    primaryColor: Colors.blue, // set the primary color to blue
+      ),
+    child: Scaffold(
       appBar: AppBar(
         title: Text("Details"),
         backgroundColor: Color.fromRGBO(54, 169, 186, 1.0),
@@ -111,6 +120,7 @@ class DonateDetailScreen extends StatelessWidget {
         ),
       ),
       drawer: AppDrawer(),
+    ),
     );
   }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>458974962609-tts7f4sp999pu98i1no47j91cb9d45k5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.458974962609-tts7f4sp999pu98i1no47j91cb9d45k5</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>458974962609-th6n9s0vdljt54bj0hja1dc6mo34um7m.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcst--dhdSxbUAC1iTDRW0dm93aRczOvY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>458974962609</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.summerhome.summerHome</string>
+	<key>PROJECT_ID</key>
+	<string>summer-home-f1a64</string>
+	<key>STORAGE_BUCKET</key>
+	<string>summer-home-f1a64.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:458974962609:ios:c61e7426f0071f4e999390</string>
+	<key>DATABASE_URL</key>
+	<string>https://summer-home-f1a64-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

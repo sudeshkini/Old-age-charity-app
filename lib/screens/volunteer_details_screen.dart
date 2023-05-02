@@ -20,7 +20,11 @@ class VolunteerDetailScreen extends StatelessWidget {
     final vid = ModalRoute.of(context)!.settings.arguments as String?;
     final vlist = Provider.of<Volunteers>(context, listen: false).vitems;
     final data = vlist.firstWhere((i) => i.id == vid);
-    return Scaffold(
+    return Theme(
+        data: ThemeData(
+          primaryColor: Colors.blue, // set the primary color to blue
+        ),
+    child: Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(54, 169, 186, 1.0),
         title: Text(
@@ -91,6 +95,7 @@ class VolunteerDetailScreen extends StatelessWidget {
             "I accept This Work ",
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
           )),
+    )
     );
   }
 }

@@ -40,7 +40,7 @@ class _AddDonaterState extends State<AddDonater> {
       daddress: "",
       imageurl: "",
       msg: "",
-      nid: "",
+      nid: Random().nextInt(100000).toString(),
       phno: "");
 
   void _pickedImage(File image) async {
@@ -101,7 +101,12 @@ class _AddDonaterState extends State<AddDonater> {
         .of(context)!
         .settings
         .arguments as String?;
-    return Scaffold(
+    return Theme(
+        data: ThemeData(
+          primaryColor: Colors.blue, // set the primary color to blue
+        ),
+    child: Scaffold(
+
       appBar: AppBar(
         title: Text(
           "Donate",
@@ -242,8 +247,8 @@ class _AddDonaterState extends State<AddDonater> {
 
       ),
 
+    ),
+
     );
-
-
   }
 }

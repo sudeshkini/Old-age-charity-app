@@ -116,6 +116,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:summer_home/provider/donator.dart';
+import 'package:summer_home/provider/hire_grandmaa.dart';
+import 'package:summer_home/provider/sells.dart';
 import 'package:summer_home/provider/user_provider.dart';
 import 'package:summer_home/provider/volunteers.dart';
 import 'package:summer_home/responsive/mobile_screen_layout.dart';
@@ -153,12 +155,29 @@ class MyApp extends StatelessWidget {
                 prevprods == null ? [] : prevprods.vitems, userProvider.getUser?.email??'');
           },
         ),
+        ChangeNotifierProxyProvider<UserProvider, Jobs>(
+          create: (_) => Jobs("", [], ""),
+          update: (ctx, userProvider, prevprods) {
+            return Jobs(userProvider.getUser?.getIdToken ?? "", prevprods == null ? [] : prevprods.jitem,
+                userProvider.getUser?.email??'');
+          },
+        ),
+        ChangeNotifierProxyProvider<UserProvider, Sells>(
+          create: (_) => Sells("", [], ""),
+          update: (ctx, userProvider, prevprods) {
+            return Sells(userProvider.getUser?.getIdToken ?? "", prevprods == null ? [] : prevprods.sitem,
+                userProvider.getUser?.email??'');
+          },
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Age Well',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: mobileBackgroundColor,
+        /*theme: ThemeData(
+          primarySwatch: Colors.blue,*/
+
 
         ),
         home: StreamBuilder(

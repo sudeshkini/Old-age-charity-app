@@ -50,7 +50,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,
+              Icons.my_location,
               color: (_page == 0) ? primaryColor : secondaryColor,
             ),
             label: '',
@@ -58,21 +58,21 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
           ),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.search,
+                Icons.favorite,
                 color: (_page == 1) ? primaryColor : secondaryColor,
               ),
               label: '',
               backgroundColor: primaryColor),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.add_circle,
+                Icons.volunteer_activism,
                 color: (_page == 2) ? primaryColor : secondaryColor,
               ),
               label: '',
               backgroundColor: primaryColor),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.favorite,
+              Icons.work,
               color: (_page == 3) ? primaryColor : secondaryColor,
             ),
             label: '',
@@ -80,7 +80,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person,
+              Icons.shop_2,
               color: (_page == 4) ? primaryColor : secondaryColor,
             ),
             label: '',

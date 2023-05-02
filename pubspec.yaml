@@ -50,6 +50,7 @@ dependencies:
   firebase_database: ^10.1.1
   flutter_staggered_animations: ^1.1.1
   url_launcher: ^6.1.10
+  icons_flutter: ^0.0.4
 
 
 

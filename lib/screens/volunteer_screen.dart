@@ -41,7 +41,11 @@ class _VolunteerScreenState extends State<VolunteerScreen> {
     final nid = ModalRoute.of(context)!.settings.arguments as String?;
     final item = Provider.of<Volunteers>(context).vitems;
     final voldata = item.where((i) => i.nid == nid).toList();
-    return Scaffold(
+    return Theme(
+        data: ThemeData(
+          primaryColor: Colors.blue, // set the primary color to blue
+        ),
+    child: Scaffold(
       appBar: AppBar(
         actions: <Widget>[
           IconButton(
@@ -72,6 +76,7 @@ class _VolunteerScreenState extends State<VolunteerScreen> {
           vid: voldata[i].id ?? '',
         ),
       ),
+    )
     );
   }
 }

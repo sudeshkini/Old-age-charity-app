@@ -97,16 +97,16 @@ class DonateTile extends StatelessWidget {
                           style: TextStyle(fontSize: 13),
                         ),
                       ),
-                     /* TextButton(
+                    /* TextButton(
                           onPressed: () {
-                            Navigator.of(context).push(
+                           Navigator.of(context).push(
                                 MaterialPageRoute(
                                 builder: (context) =>  DonateDetailScreen(),
                                 ),
                             );
-                            /*Navigator.of(context).pushNamed(
+                           /* Navigator.of(context).pushNamed(
                                 "/donatedetailscreen",
-                                arguments: did!);*/
+                                arguments: did);*/
                           },
                           child: Text(
                             "Details",

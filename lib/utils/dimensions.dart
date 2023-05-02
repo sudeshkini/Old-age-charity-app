@@ -12,10 +12,13 @@ const webScreenSize = 600;
 
 List<Widget> homeScreenItems = [
   MapScreen(),
-  //AddDonater(),
   DonateScreen(""),
   VolunteerScreen(""),
-  //DonateDetailScreen(),
+  JobScreen(""),
+  SellScreen(""),
+
+
+
   /*const AddPostScreen(),
   const Text('notifications'),
   ProfileScreen(
